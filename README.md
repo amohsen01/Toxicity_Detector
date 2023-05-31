@@ -13,9 +13,10 @@ Before running the FastAPI backend, ensure that you have the following installed
 
 To run the FastAPI backend locally, follow these steps:
 
-1. Clone the repository: `git clone <repository_url>`
+1. Clone the repository: `git clone https://github.com/amohsen01/Toxicity_Detector/`
 2. Navigate to the project directory: `cd toxicity-detector`
-3. Install the required Python packages: `pip install -r requirements.txt`
+3. Go to the branch: `git checkout FASTAPI`
+4. Install the required Python packages: `pip install -r requirements.txt`
 
 ## Starting the FastAPI Backend Server
 
