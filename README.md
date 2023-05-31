@@ -18,6 +18,17 @@ To run the FastAPI backend locally, follow these steps:
 3. Go to the branch: `git checkout FASTAPI`
 4. Install the required Python packages: `pip install -r requirements.txt`
 
+## Downloading the Trained Model and Dataset
+
+To use the FastAPI backend, you need to download the trained model and dataset. Follow the steps below to download them:
+
+1. Download the trained model and dataset from the following link:
+   [Model and Dataset](https://www.dropbox.com/s/tlc7kv2soj5cghx/Model_Dataset.zip?dl=0)
+
+2. Extract the downloaded zip file to a directory of your choice.
+
+3. Note down the path to the extracted directory, as you will need to provide it later when starting the backend server.
+
 ## Starting the FastAPI Backend Server
 
 Once the prerequisites are met and the required packages are installed, you can start the FastAPI backend server by following these steps:
