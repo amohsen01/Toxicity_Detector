@@ -45,7 +45,7 @@ The React website allows you to enter a comment and sends a prediction request t
 
 ## Customization
 
-You can customize the React website by modifying the `index.tsx` file in the `src` directory. You can update the UI, add additional features, or enhance the user experience according to your requirements.
+You can customize the React website by modifying the `index.tsx` file in the `pages` directory. You can update the UI, add additional features, or enhance the user experience according to your requirements.
 
 ## Contribution
 
