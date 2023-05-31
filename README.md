@@ -13,7 +13,7 @@ Before running the React framework website, ensure that you have the following i
 
 To run the React framework website locally, follow these steps:
 
-1. Clone the repository: `git clone <repository_url>`
+1. Clone the repository: `git clone https://github.com/amohsen01/Toxicity_Detector/`
 2. Navigate to the project directory: `cd toxicity-detector`
 3. Switch to the `WebFramework` branch: `git checkout WebFramework`
 4. Install the required dependencies: `npm install`
