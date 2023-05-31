@@ -26,7 +26,7 @@ Once the prerequisites are met and the dependencies are installed, you can start
 2. Run the following command to start the development server:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
    This command starts the development server and automatically opens the Toxicity Detector website in your default browser.
