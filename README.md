@@ -65,7 +65,7 @@ To get started with this project, follow these steps:
 4. Run the backend server: `uvicorn main:app --reload`
 5. Open a new terminal window and switch to the **WebFramework** branch: `git checkout WebFramework`
 6. Install the required npm packages: `npm install`
-7. Start the frontend development server: `npm start`
+7. Start the frontend development server: `npm run dev`
 8. Access the website in your browser at `http://localhost:3000`
 
 Note: Make sure you have Python, Node.js, and npm installed on your system.
