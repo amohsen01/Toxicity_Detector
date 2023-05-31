@@ -1,68 +1,51 @@
-# FAST API Toxicity Detector Backend
+# Toxicity Detector React Framework Website
 
-This is the backend component of the Toxicity Detector web application, built using FastAPI. The backend is responsible for loading the trained model, processing user comments, and returning the predicted categories for each comment.
+This is the front-end component of the Toxicity Detector web application, built using React framework. The React website allows users to input comments and receive predictions on whether the comments fall into any of the toxic categories.
 
 ## Prerequisites
 
-Before running the FastAPI backend, ensure that you have the following installed:
+Before running the React framework website, ensure that you have the following installed:
 
-- Python 3.x
-- pip (Python package manager)
+- Node.js
+- npm (Node package manager)
 
 ## Getting Started
 
-To run the FastAPI backend locally, follow these steps:
+To run the React framework website locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/amohsen01/Toxicity_Detector/`
+1. Clone the repository: `git clone <repository_url>`
 2. Navigate to the project directory: `cd toxicity-detector`
-3. Go to the branch: `git checkout FASTAPI`
-4. Install the required Python packages: `pip install -r requirements.txt`
+3. Switch to the `WebFramework` branch: `git checkout WebFramework`
+4. Install the required dependencies: `npm install`
 
-## Downloading the Trained Model and Dataset
+## Starting the React Development Server
 
-To use the FastAPI backend, you need to download the trained model and dataset. Follow the steps below to download them:
-
-1. Download the trained model and dataset from the following link:
-   [Model and Dataset](https://www.dropbox.com/s/tlc7kv2soj5cghx/Model_Dataset.zip?dl=0)
-
-2. Extract the downloaded zip file to a directory of your choice.
-
-3. Note down the path to the extracted directory, as you will need to provide it later when starting the backend server.
-
-## Starting the FastAPI Backend Server
-
-Once the prerequisites are met and the required packages are installed, you can start the FastAPI backend server by following these steps:
+Once the prerequisites are met and the dependencies are installed, you can start the React development server by following these steps:
 
 1. Ensure you are in the project root directory.
-2. Run the following command to start the server:
+2. Run the following command to start the development server:
 
    ```bash
-   uvicorn main:app --reload
+   npm start
    ```
 
-   This command starts the server using Uvicorn and automatically reloads the server on code changes.
+   This command starts the development server and automatically opens the Toxicity Detector website in your default browser.
 
-3. The backend server is now running locally on `http://localhost:8000`. You should see log messages indicating that the server has started successfully.
+3. The website is now running locally on `http://localhost:3000`. You should see the web interface where you can input comments and receive predictions.
 
-## Testing the API
+## Making Predictions
 
-Once the server is up and running, you can test the API using an API testing tool like [Postman](https://www.postman.com/) or cURL commands.
+The React website allows you to enter a comment and sends a prediction request to the FastAPI backend for toxicity classification. Here's how it works:
 
-To test the API using cURL, you can execute the following command in your terminal:
+1. Enter a comment in the input field.
+2. Click the "Predict" button.
+3. The website sends a prediction request to the FastAPI backend running on `http://localhost:8000/predict`.
+4. The backend processes the request and returns the predicted categories for the comment.
+5. The React website displays the prediction results on the screen.
 
-```bash
-curl -X POST -H "Content-Type: application/json" -d '{"comment": "Your comment goes here"}' http://localhost:8000/predict
-```
+## Customization
 
-Make sure to replace `"Your comment goes here"` with the comment you want to test.
-
-The API endpoint `/predict` expects a JSON object with a single field called `"comment"`, which represents the comment to be classified. The API will respond with a JSON object containing the predicted categories for the comment.
-
-## API Documentation
-
-The FastAPI backend automatically generates interactive API documentation based on the defined endpoints and data models. You can access the API documentation by visiting `http://localhost:8000/docs` in your browser while the server is running.
-
-The documentation provides details about the available API endpoints, request and response models, and allows you to test the API directly from the browser.
+You can customize the React website by modifying the `App.tsx` file in the `src` directory. You can update the UI, add additional features, or enhance the user experience according to your requirements.
 
 ## Contribution
 
@@ -74,7 +57,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## References
 
-- [FastAPI Documentation](https://fastapi.tiangolo.com/)
-- [Uvicorn Documentation](https://www.uvicorn.org/)
-- [cURL Documentation](https://curl.se/docs/)
-- [Postman Documentation](https://learning.postman.com/docs/getting-started/introduction/)
+- [React Documentation](https://reactjs.org/)
+- [Node.js Documentation](https://nodejs.org/)
+- [npm Documentation](https://docs.npmjs.com/)
